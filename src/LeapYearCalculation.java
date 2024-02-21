@@ -7,7 +7,7 @@ public class LeapYearCalculation {
         Scanner data = new Scanner(System.in);
         year = data.nextInt();
 
-        if (year % 400 == 0) {
+        if (year%4==0 && (year%100!=0)||(year%400==0)) {
             System.out.println("The Year You Entered Is Leap Year");
         } else {
             System.out.println("The Year You Entered Is Not Leap Year");
